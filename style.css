@@ -1,11 +1,12 @@
-nav {
+nav, footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(132, 146, 104);
-    height: 10vh;
+    background-color: rgb(61, 66, 52);
+    height: fit-content;
     width: 100vw;
+    padding-top: 10px;
 }
 
 nav h1 {
@@ -20,11 +21,18 @@ nav h1 {
 
 .nav-links {
     text-decoration: none;
-    color: black;
+    color: antiquewhite;
     :hover {
-        color: green;
+        color: rgb(35, 32, 32);
     }
     padding-right: 10px;
+}
+
+main {
+    background-color: rgb(35, 32, 32);
+    color: antiquewhite;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .subheader {
@@ -35,19 +43,61 @@ nav h1 {
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 45%;
     height: fit-content;
-    border-style: solid;
+    /* border-style: solid; */
 }
 
 .main p {
-    text-align: center;
+    text-align: left;
 }
 
 section {
     display: flex;
     margin-left: 5px;
     margin-right: 5px;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    color: antiquewhite;
+    justify-content: space-between;
+    min-height: 8vh;
+    height: fit-content;
+}
+
+footer h6 {
+    padding-left: 15px;
+}
+
+.contact-info {
+    min-width: 50vw;
+    width: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.contacts {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-height: 50px;
+    max-width: 100%;
+}
+
+.contact-info > a {
+    :hover {
+        transform: scale(1.2);
+    }
 }
