@@ -24,6 +24,7 @@ nav h1 {
     color: antiquewhite;
     :hover {
         color: rgb(35, 32, 32);
+        font-style: italic;
     }
     padding-right: 10px;
 }
@@ -45,7 +46,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     width: 45%;
     height: fit-content;
     /* border-style: solid; */
@@ -53,6 +54,7 @@ main {
 
 .main p {
     text-align: left;
+    padding-top: 10px;
 }
 
 section {
@@ -62,6 +64,18 @@ section {
     justify-content: space-evenly;
     padding-bottom: 25px;
 }
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* justify-content: center;
+    align-items: center; */
+    padding-bottom: 25px;
+}
+
 
 img {
     max-width: 100%;
@@ -100,4 +114,56 @@ footer h6 {
     :hover {
         transform: scale(1.2);
     }
+}
+
+.icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.icon-img:hover {
+    transform: scale(1.1);
+}
+
+.list {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.lamp-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.lamps {
+    max-width: 30%;
+    height: auto;
+
+}
+
+.lamp-section {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.lamp-p {
+    padding-top: 20px;
+    width: 90%;
+}
+
+span {
+    display: flex;
+    justify-content: center;
 }
